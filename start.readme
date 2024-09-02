@@ -1,0 +1,107 @@
+This project is an E-Ticketing App that allows users to book tickets for various events. The app is built with a React frontend and an Express/Node.js backend.
+
+Table of Contents
+1. Features
+2. Tech Stack
+3. Folder Structure
+Getting Started
+Installation
+Usage
+API Endpoints
+Contributing
+License
+Features
+User authentication and authorization
+Event listing and detailed view
+Ticket booking and payment integration
+User dashboard with booking history
+Responsive design
+Tech Stack
+Frontend:
+React
+React Router
+Axios (for API requests)
+Backend:
+Node.js
+Express
+MongoDB 
+JWT for authentication
+
+
+Folder Structure
+Copy code
+├── frontend
+│   ├── public
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   └── App.js
+│   └── package.json
+├── backend
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── middleware
+│   ├── config
+│   ├── app.js
+│   └── package.json
+└── README.md
+frontend/: Contains all the React components, pages, and services.
+backend/: Contains the Express.js server code, including routes, controllers, models, and middleware.
+Getting Started
+Prerequisites
+Make sure you have the following installed:
+
+Node.js
+npm or yarn
+MongoDB (if using)
+Installation
+Clone the repository:
+
+bash
+Copy code
+cd e-ticketing-app
+Install dependencies:
+
+For the frontend:
+
+bash
+Copy code
+cd frontend
+npm install
+For the backend:
+
+bash
+Copy code
+cd backend
+npm install
+Environment Variables:
+
+Create a .env file in the backend/ directory and add your environment variables:
+
+bash
+Copy code
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+Usage
+Running the Frontend
+bash
+Copy code
+cd frontend
+npm start
+Running the Backend
+bash
+Copy code
+cd backend
+npm start
+The frontend should be running on http://localhost:3000 and the backend on http://localhost:5000.
+
+API Endpoints
+Method	Endpoint	Description
+GET	/api/events	Fetch all events
+GET	/api/events/:id	Fetch a single event
+POST	/api/tickets	Book a ticket
+POST	/api/auth/login	User login
+POST	/api/auth/register	User registration
+GET	/api/users/me	Get current user details
